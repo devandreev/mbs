@@ -1,3 +1,242 @@
 .page-header {
+    --transform-delay: 400ms;
 
+    height: 60px;
+    width: 100%;
+
+    padding-top: 15px;
+    padding-right: var(--scrollbar-gap);
+
+    @media (--tablet) {
+        height: 94px;
+        padding-top: 28px;
+    }
+
+    @media (--desktop) {
+        height: 104px;
+        padding-top: 28px;
+    }
+
+    &:after {
+
+        @media (--tablet) {
+            content: '';
+            display: block;
+            background-color: var(--color-gray-3);
+
+            height: 1px;
+            max-width: calc(var(--wrapper-max-width) - var(--side-padding) * 2);
+            width: 100%;
+
+            position: absolute;
+            bottom: 11px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            transition: opacity .4s ease;
+        }
+
+        @media (--desktop) {
+            background-color: var(--color-gray-light);
+            max-width: 1500px;
+        }
+    }
+
+    &.headroom {
+        opacity: 1;
+
+        position: fixed;
+        z-index: 100;
+
+        transition:
+                background-color 200ms ease,
+                opacity 50ms ease,
+                transform var(--transform-delay) ease;
+
+        will-change: transform;
+
+        &--faded {
+            opacity: 0;
+        }
+
+        &--pinned,
+        &--top {
+            transform: translateY(0%);
+        }
+
+        &--top:not(.headroom--pinned):not(.headroom--unpinned) {
+            --transform-delay: 0ms;
+        }
+
+        &--not-top:after {
+            opacity: 0;
+        }
+
+        &--unpinned {
+            transform: translateY(-100%);
+        }
+    }
+
+    &--fixed {
+        transform: translateY(0) !important;
+        background-color: transparent !important;
+
+        &:after {
+            opacity: 0;
+        }
+    }
+
+    &--transparent:not(.headroom--not-top) {
+        background-color: rgba(255,255,255,0);
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-areas: 'logo right';
+        grid-template-columns: 1fr auto;
+
+        @media (--tablet) {
+            grid-template-areas: 'logo menu right';
+            grid-template-columns: 1fr auto 1fr;
+
+        }
+
+        @media (--desktop-big) {
+            max-width: 1560px;
+        }
+    }
+
+    &__logo {
+        grid-area: logo;
+
+        display: block;
+        color: black;
+
+        margin: 0;
+
+        width: 28px;
+
+        position: relative;
+
+        @media (--tablet) {
+            width: 28px;
+        }
+
+        @media (--desktop) {
+            width: 56px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &:after {
+            content: attr(data-sup-text);
+            display: block;
+
+            font-size: 11px;
+            font-weight: 600;
+            font-style: italic;
+
+            text-transform: uppercase;
+
+            position: absolute;
+            top: -8px;
+            right: -2px;
+
+            @media (--tablet) {
+                top: -5px;
+            }
+
+            @media (--desktop) {
+                font-size: 13px;
+
+                top: -8px;
+            }
+        }
+    }
+
+    &__menu {
+        grid-area: menu;
+
+        display: none;
+
+        @media (--tablet) {
+            display: block;
+
+            padding-top: 12px;
+            padding-right: 118px;
+        }
+
+        &-list {
+            display: flex;
+            column-gap: 30px;
+
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        &-item {
+        }
+    }
+
+    &__link {
+        color: var(--color-dark-2);
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        transition: color .2s ease;
+
+        &:hover,
+        &:focus {
+            color: var(--color-blue);
+        }
+
+        &--corporate {
+            display: none;
+
+            @media (--desktop) {
+                display: inline;
+            }
+        }
+    }
+
+    &__right {
+        grid-area: right;
+
+        justify-self: flex-end;
+
+        @media (--desktop) {
+            padding-top: 13px;
+        }
+    }
+
+    &__burger-button {
+        position: relative;
+        top: 2px;
+
+        @media (--tablet) {
+            top: 8px;
+        }
+
+        @media (--desktop) {
+            display: none;
+        }
+    }
+
+    &__phone {
+        display: none;
+
+        @media (--desktop) {
+            display: block;
+        }
+    }
+
+    &__button {
+
+    }
 }
