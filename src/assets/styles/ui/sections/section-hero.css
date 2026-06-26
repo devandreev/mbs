@@ -3,6 +3,10 @@
     position: relative;
     color: var(--color-dark);
 
+    @media (--desktop) {
+        aspect-ratio: 1280/697;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -20,11 +24,18 @@
     }
 
     &__title {
-        font-size: 32px;
-        line-height: 40px;
-        font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 2%;
+
+        br._desktop {
+            display: none;
+
+            @media (--desktop) {
+                display: block;
+
+                & + span {
+                    padding-left: 325px;
+                }
+            }
+        }
     }
 
     &__text {
@@ -35,6 +46,12 @@
 
         margin-top: auto;
         margin-bottom: 0;
+
+        @media (--desktop) {
+            font-size: 20px;
+            line-height: 26px;
+            max-width: 495px;
+        }
     }
 
     &__picture {
