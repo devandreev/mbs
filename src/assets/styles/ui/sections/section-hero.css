@@ -25,6 +25,10 @@
 
     &__title {
 
+        @media (--desktop) {
+            margin-top: 0;
+        }
+
         br._desktop {
             display: none;
 

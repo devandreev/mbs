@@ -18,6 +18,10 @@
 
         margin: 0;
         margin-bottom: 24px;
+
+        @media (--desktop) {
+            margin-bottom: 80px;
+        }
     }
 
     &__preview {
@@ -49,5 +53,10 @@
         z-index: 1;
 
         margin: 0 auto;
+
+        @media (--desktop) {
+            height: 80px;
+            width: 80px;
+        }
     }
 }
