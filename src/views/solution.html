@@ -1,5 +1,47 @@
 <section class="section-solution">
     <div class="wrapper">
-        <h2 class="section-solution__title">Я предложу идеальное решение</h2>
+        <h2 class="section-solution__title headline headline--h2">Я предложу идеальное решение</h2>
+
+        <div class="section-solution__grid">
+            <div class="section-solution__left">
+                <picture class="section-solution__image">
+                    <source media="(max-width: 767px)" srcset="/images/solution/photo-mob.png">
+                    <img src="/images/solution/photo-desc.png" alt="">
+                </picture>
+            </div>
+
+            <div class="section-solution__right">
+                <form class="section-solution__form">
+                    <label class="section-solution__label">
+                        <input class="solution-form__name form-input" type="text" placeholder="Имя" />
+                    </label>
+
+                    <label class="section-solution__label">
+                        <input class="solution-form__phone form-input" type="text" placeholder="Телефон" />
+                    </label>
+
+                    <label class="section-solution__label">
+                        <input class="solution-form__email form-input" type="email" placeholder="E-mail" />
+                    </label>
+
+                    <label class="solution-form__checkbox form-checkbox">
+                        <input
+                            class="form-checkbox__input"
+                            type="checkbox"
+                            checked
+                            required
+                            name="agreement"
+                        />
+
+                        <span class="form-checkbox__content">
+                            <span class="form-checkbox__link"><a href="/policy" class="js-policy link">персональных данных</a></span>
+                            <span class="form-checkbox__text">Нажимая на кнопку, вы даете согласие на&nbsp;обработку&nbsp;</span>
+                        </span>
+                    </label>
+
+                    <button class="solution-form__button form-button">Отправить</button>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
