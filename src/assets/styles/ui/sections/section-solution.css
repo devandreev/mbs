@@ -1,0 +1,92 @@
+.section-solution {
+
+    &__title {
+        margin-top: 80px;
+        margin-bottom: 18px;
+    }
+
+    &__grid {
+
+    }
+
+    &__left {
+
+        &-text {
+
+        }
+    }
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        width: 160px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__right {
+
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        margin-top: 36px;
+    }
+
+    &__label {
+
+    }
+
+    &__button {
+
+    }
+
+    &__quote {
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 2%;
+
+        margin: 0;
+
+        padding-top: 15px;
+        padding-bottom: 6px;
+        position: relative;
+
+        &:before {
+            @mixin icon quote;
+
+            color: var(--color-brown-light-2);
+            height: 32px;
+            width: 28px;
+            position: absolute;
+            top: -34px;
+        }
+    }
+
+    &__name {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+        text-align: center;
+        margin: 0;
+        margin-top: 2px;
+    }
+
+    &__position {
+        color: var(--color-brown-light-2);
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        margin: 0;
+        margin-top: -4px;
+    }
+}

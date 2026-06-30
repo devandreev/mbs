@@ -19,5 +19,8 @@ import '@/assets/styles/ui/sections/section-review.css'
 import '@/assets/styles/ui/sections/section-more.css'
 import '@/assets/styles/ui/sections/section-company.css'
 import '@/assets/styles/ui/sections/section-stories.css'
+import '@/assets/styles/ui/sections/section-advatage.css'
 import '@/assets/styles/ui/sections/section-mbs.css'
+import '@/assets/styles/ui/sections/section-brands.css'
+import '@/assets/styles/ui/sections/section-solution.css'
 

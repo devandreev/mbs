@@ -21,7 +21,7 @@
 
     &__item {
         flex-shrink: 0;
-        width: 224px;
+        width: 160px;
 
         img {
             display: block;
