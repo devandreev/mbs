@@ -1,3 +1,103 @@
 .page-footer {
+    background-color: var(--color-dark);
+    padding-top: 32px;
+    padding-bottom: 18px;
 
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+        margin-top: 28px;
+
+        &-link {
+            color: var(--color-white);
+            font-size: 16px;
+            line-height: 30px;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 2%;
+        }
+    }
+
+    &__submenu {
+        display: flex;
+        flex-direction: column;
+        row-gap: 28px;
+
+        margin-top: 28px;
+        margin-bottom: 36px;
+
+        &-link {
+            color: var(--color-brown-light-2);
+            font-size: 14px;
+            line-height: 20px;
+            text-decoration: none;
+        }
+    }
+
+    &__phone {
+        display: block;
+        color: var(--color-white);
+        font-size: 20px;
+        line-height: 20px;
+        text-decoration: none;
+        letter-spacing: 3%;
+    }
+
+    &__social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .link-icon {
+            color: var(--color-white);
+        }
+    }
+
+    &__social-text {
+        color: var(--color-gray-3);
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 200;
+        letter-spacing: 3%;
+        margin: 0;
+        margin-top: 27px;
+        margin-bottom: 13px;
+    }
+
+    &__copyright {
+        color: var(--color-white);
+        font-size: 14px;
+        line-height: 40px;
+        margin-top: 32px;
+    }
+
+    &__developer {
+        display: block;
+        font-size: 13px;
+        text-decoration: none;
+        color: var(--color-white);
+        margin-top: 18px;
+
+        &:after {
+            @mixin icon ustrong;
+
+            display: inline-block;
+
+            height: 11px;
+            width: 59px;
+
+            position: relative;
+            left: 5px;
+            top: 0px;
+
+            transition: color .1s ease;
+
+            @media (--tablet) {
+                top: 1px;
+            }
+        }
+    }
 }
+

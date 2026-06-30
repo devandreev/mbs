@@ -42,6 +42,7 @@ html {
   }
 
   body {
+    background-color: var(--color-dark);
     font-size: 12px;
     line-height: 20px;
     font-weight: 300;

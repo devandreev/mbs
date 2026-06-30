@@ -1,0 +1,48 @@
+.mbs-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid var(--color-gray-2);
+
+    &__label {
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__address {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 200;
+        margin: 0;
+        margin-bottom: 12px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+
+    &__phone {
+        display: block;
+        color: var(--color-white);
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    &__email {
+        display: block;
+        color: var(--color-brown-light);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+}
