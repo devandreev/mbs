@@ -2,8 +2,8 @@
     padding-bottom: 80px;
 
     &__title {
-        margin-top: 80px;
-        margin-bottom: 30px;
+        margin-top: 72px;
+        margin-bottom: 22px;
     }
 
     &__slides {
@@ -14,11 +14,11 @@
     &__slide {
         display: none;
         flex-direction: column;
-        row-gap: 16px;
+        row-gap: 10px;
         aspect-ratio: 366/385;
         color: var(--color-white);
 
-        padding: 32px 16px;
+        padding: 28px 16px;
         width: 100%;
 
         position: relative;
@@ -114,7 +114,7 @@
 
             img {
                 display: block;
-                object-fit: contain;
+                object-fit: cover;
                 height: 100%;
                 width: 100%;
             }

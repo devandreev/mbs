@@ -1,0 +1,61 @@
+.section-company {
+
+    &__title {
+        margin-top: 74px;
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+
+        margin: 0;
+        margin-top: 32px;
+        margin-bottom: 14px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+        opacity: 0.6;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 18px;
+        padding-right: 8px;
+    }
+
+    &__anchor {
+        display: inline-block;
+        color: var(--color-brown-light);
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 300;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+
+    &__image {
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__image-row {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 86px;
+
+        margin-top: 56px;
+
+        img {
+            height: 105px;
+        }
+    }
+}

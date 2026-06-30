@@ -1,0 +1,32 @@
+.section-stories {
+    padding-top: 76px;
+
+    &__top-text {
+        max-width: 100vw;
+        margin-bottom: -22px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__grid {
+        @mixin hide-scrollbar;
+
+        display: flex;
+        column-gap: 2px;
+        overflow-x: scroll;
+
+        padding-left: var(--side-padding);
+        padding-right: var(--side-padding);
+    }
+
+    &__item {
+        flex-shrink: 0;
+        width: 224px;
+
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

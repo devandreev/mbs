@@ -1,6 +1,5 @@
 .section-review {
     aspect-ratio: 390/210;
-    margin-bottom: 80px;
 
     &__wrapper {
         display: flex;
@@ -16,8 +15,8 @@
         position: relative;
         z-index: 1;
 
-        margin: 0;
-        margin-bottom: 24px;
+        margin-top: -4px;
+        margin-bottom: 14px;
 
         @media (--desktop) {
             margin-bottom: 80px;

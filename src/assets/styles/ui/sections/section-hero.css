@@ -24,6 +24,8 @@
     }
 
     &__title {
+        margin-top: 30px;
+        margin-bottom: 0;
 
         @media (--desktop) {
             margin-top: 0;
@@ -50,6 +52,8 @@
 
         margin-top: auto;
         margin-bottom: 0;
+
+        max-width: 240px;
 
         @media (--desktop) {
             font-size: 20px;

@@ -10,7 +10,14 @@ import '@/assets/styles/ui/header/page-header.css'
 
 import '@/assets/styles/ui/pages/page-home.css'
 
+import '@/assets/styles/ui/mbs-row.css'
+
 import '@/assets/styles/ui/sections/section-hero.css'
 import '@/assets/styles/ui/sections/section-quality.css'
 import '@/assets/styles/ui/sections/section-equipment.css'
 import '@/assets/styles/ui/sections/section-review.css'
+import '@/assets/styles/ui/sections/section-more.css'
+import '@/assets/styles/ui/sections/section-company.css'
+import '@/assets/styles/ui/sections/section-stories.css'
+import '@/assets/styles/ui/sections/section-mbs.css'
+
