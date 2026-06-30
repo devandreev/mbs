@@ -25,6 +25,11 @@
       top: -1px;
       left: 4px;
     }
+
+    @media (--desktop) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   & &__link,

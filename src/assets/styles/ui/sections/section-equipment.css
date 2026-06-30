@@ -4,6 +4,11 @@
     &__title {
         margin-top: 72px;
         margin-bottom: 22px;
+
+        @media (--desktop) {
+            margin-top: 94px;
+            margin-bottom: 35px;
+        }
     }
 
     &__slides {
@@ -48,9 +53,15 @@
 
             @media (--desktop) {
                 max-height: 520px;
+                padding-top: 38px;
+                padding-left: 30px;
 
                 .section-equipment__slide-title {
                     font-size: 24px;
+                }
+
+                .section-equipment__slide-subtitle {
+                    display: none;
                 }
             }
         }
@@ -68,6 +79,8 @@
 
             @media (--desktop) {
                 max-height: 520px;
+                padding-top: 38px;
+                padding-left: 30px;
 
                 .section-equipment__slide-title {
                     font-size: 24px;
@@ -106,6 +119,7 @@
         }
 
         &-picture {
+            display: block;
             position: absolute;
             top: 0;
             left: 0;

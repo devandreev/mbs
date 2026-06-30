@@ -4,6 +4,11 @@
     &__title {
         margin-top: 52px;
         margin-bottom: 14px;
+
+        @media (--desktop) {
+            margin-top: 84px;
+            margin-bottom: 38px;
+        }
     }
     
      &__image {
@@ -16,6 +21,17 @@
 
     &__left {
 
+        @media (--desktop) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+
+            .section-more__image {
+                max-width: 680px;
+                margin-top: 26px;
+            }
+        }
+
         &-text {
             font-size: 16px;
             line-height: 24px;
@@ -23,10 +39,23 @@
             text-transform: uppercase;
             margin-top: 14px;
             margin-bottom: 19px;
+
+            @media (--desktop) {
+                font-size: 24px;
+                line-height: 36px;
+                max-width: 600px;
+            }
         }
     }
 
     &__right {
+
+        @media (--desktop) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+            margin-top: -206px;
+        }
 
         &-text {
             font-size: 14px;
@@ -35,6 +64,13 @@
             opacity: 0.6;
             margin-top: 0;
             margin-bottom: 0;
+
+            @media (--desktop) {
+                font-size: 20px;
+                line-height: 26px;
+                margin-top: auto;
+                max-width: 360px;
+            }
         }
 
         &-images {
@@ -44,6 +80,10 @@
 
             .section-more__image:nth-child(1) {
                 margin-top: 76px;
+
+                @media (--desktop) {
+                    margin-top: 190px;
+                }
             }
         }
     }
@@ -55,6 +95,10 @@
             position: relative;
             top: -12px;
             width: 100%;
+
+            @media (--desktop) {
+                top: -48px;
+            }
         }
 
         &-small-text {
@@ -69,6 +113,14 @@
             margin-top: -42px;
             position: relative;
             z-index: 2;
+
+            @media (--desktop) {
+                font-size: 40px;
+                margin-left: auto;
+                margin-top: -116px;
+                margin-right: 30px;
+                width: 50%;
+            }
         }
     }
 }

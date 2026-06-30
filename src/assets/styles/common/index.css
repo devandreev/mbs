@@ -12,12 +12,13 @@
     --side-padding: 34px;
     --body-offset: 95px;
     --media-screen: tablet;
+    --wrapper-max-width: 1820px;
   }
 
   @media (--desktop) {
     --side-padding: 30px;
-    --body-offset: 170px;
-    --wrapper-max-width: 1820px;
+    --body-offset: 140px;
+    --wrapper-max-width: 1880px;
     --media-screen: desktop;
   }
 }

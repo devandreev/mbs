@@ -22,9 +22,9 @@
     transition: box-shadow .2s ease;
 
     @media (--tablet) {
-      font-size: 14px;
+      font-size: 16px;
 
-      padding: 16px 28px 16px 21px;
+      padding: 12px 28px 14px 15px;
     }
 
     &:hover {
@@ -54,7 +54,7 @@
     padding-top: 5px;
 
     @media (--tablet) {
-      height: 108px;
+      height: 78px;
     }
   }
 

@@ -2,6 +2,10 @@
     padding-top: 46px;
     padding-bottom: 56px;
 
+    @media (--desktop) {
+        padding-top: 100px;
+    }
+
     &__title {
         margin: 0;
     }
@@ -13,6 +17,10 @@
         img {
             display: block;
             width: 100%;
+        }
+
+        @media (--desktop) {
+            margin-bottom: 40px;
         }
     }
 }

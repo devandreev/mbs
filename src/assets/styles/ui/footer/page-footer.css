@@ -3,12 +3,22 @@
     padding-top: 32px;
     padding-bottom: 18px;
 
+    &__logo {
+        @media (--desktop) {
+            width: 106px;
+        }
+    }
+
     &__menu {
         display: flex;
         flex-direction: column;
         row-gap: 16px;
 
         margin-top: 28px;
+
+        @media (--desktop) {
+            row-gap: 24px;
+        }
 
         &-link {
             color: var(--color-white);
@@ -17,6 +27,10 @@
             text-transform: uppercase;
             text-decoration: none;
             letter-spacing: 2%;
+
+            @media (--desktop) {
+                font-size: 18px;
+            }
         }
     }
 
@@ -28,11 +42,20 @@
         margin-top: 28px;
         margin-bottom: 36px;
 
+        @media (--desktop) {
+            row-gap: 38px;
+            margin-bottom: 0;
+        }
+
         &-link {
             color: var(--color-brown-light-2);
             font-size: 14px;
             line-height: 20px;
             text-decoration: none;
+
+            @media (--desktop) {
+                font-size: 16px;
+            }
         }
     }
 
@@ -43,6 +66,11 @@
         line-height: 20px;
         text-decoration: none;
         letter-spacing: 3%;
+
+        @media (--desktop) {
+            font-size: 16px;
+            margin-top: 30px;
+        }
     }
 
     &__social-links {
@@ -52,6 +80,10 @@
 
         .link-icon {
             color: var(--color-white);
+        }
+
+        @media (--desktop) {
+            column-gap: 10px;
         }
     }
 
@@ -71,6 +103,10 @@
         font-size: 14px;
         line-height: 40px;
         margin-top: 32px;
+
+        @media (--desktop) {
+            font-size: 18px;
+        }
     }
 
     &__developer {
@@ -79,6 +115,11 @@
         text-decoration: none;
         color: var(--color-white);
         margin-top: 18px;
+
+        @media (--desktop) {
+            margin-right: 30px;
+            margin-top: 40px;
+        }
 
         &:after {
             @mixin icon ustrong;
@@ -97,6 +138,28 @@
             @media (--tablet) {
                 top: 1px;
             }
+        }
+    }
+
+    &__top {
+        @media (--desktop) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding-top: 44px;
+        }
+    }
+
+    &__contacts {
+        @media (--desktop) {
+            max-width: 199px;
+            margin-left: auto;
+        }
+    }
+
+    &__bottom {
+        @media (--desktop) {
+            display: flex;
+            justify-content: space-between;
         }
     }
 }

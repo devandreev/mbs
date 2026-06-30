@@ -13,8 +13,8 @@
     }
 
     @media (--desktop) {
-        height: 104px;
-        padding-top: 28px;
+        height: 144px;
+        padding-top: 40px;
     }
 
     &:after {
@@ -99,12 +99,12 @@
         @media (--tablet) {
             grid-template-areas: 'logo menu right';
             grid-template-columns: auto auto 1fr;
+            align-items: center;
             column-gap: 40px;
-
         }
 
         @media (--desktop-big) {
-            max-width: 1560px;
+            /*max-width: 1560px;*/
         }
     }
 
@@ -166,8 +166,8 @@
         @media (--tablet) {
             display: block;
 
-            padding-top: 12px;
-            padding-right: 118px;
+            /*padding-top: 12px;*/
+            /*padding-right: 118px;*/
         }
 
         &-list {
@@ -192,6 +192,11 @@
 
         transition: color .2s ease;
 
+        @media (--desktop) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
         &:hover,
         &:focus {
             color: var(--color-blue);
@@ -212,7 +217,7 @@
         justify-self: flex-end;
 
         @media (--desktop) {
-            padding-top: 13px;
+            /*padding-top: 13px;*/
         }
     }
 
@@ -235,6 +240,8 @@
         @media (--desktop) {
             display: block;
             color: var(--color-dark);
+            font-size: 20px;
+            line-height: 30px;
             text-decoration: none;
         }
     }

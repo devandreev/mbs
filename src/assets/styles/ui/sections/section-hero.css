@@ -21,6 +21,9 @@
         padding-top: var(--body-offset);
         padding-right: 40px;
         padding-bottom: 56px;
+
+        @media (--desktop) {
+        }
     }
 
     &__title {

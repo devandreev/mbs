@@ -8,8 +8,9 @@
         letter-spacing: 2%;
 
         @media (--desktop) {
-            font-size: 72px;
-            line-height: 72px;
+            font-size: 100px;
+            line-height: 100px;
+            font-weight: 200;
         }
     }
 

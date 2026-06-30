@@ -3,6 +3,11 @@
     &__title {
         margin-top: 64px;
         margin-bottom: 20px;
+
+        @media (--desktop) {
+            margin-top: 96px;
+            margin-bottom: 124px;
+        }
     }
 
     &__container {
@@ -54,6 +59,10 @@
             display: block;
             height: 100%;
             width: 100%;
+        }
+
+        @media (--desktop) {
+            height: 205px;
         }
     }
 

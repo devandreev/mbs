@@ -13,6 +13,10 @@
     &__title {
         margin-top: 70px;
         margin-bottom: 0;
+
+        @media (--desktop) {
+            margin-top: 34px;
+        }
     }
 
     &__text {
@@ -30,6 +34,7 @@
             max-width: 911px;
             margin: 0 auto;
             margin-bottom: 94px;
+            margin-top: 36px;
         }
     }
 
@@ -40,6 +45,7 @@
 
         @media (--desktop) {
             flex-direction: row;
+            justify-content: space-between;
             column-gap: 246px;
         }
     }
@@ -52,6 +58,11 @@
 
     &__video {
         position: relative;
+
+        @media (--desktop) {
+            min-width: 680px;
+            margin-top: 18px;
+        }
 
         img {
             display: block;
@@ -143,6 +154,8 @@
         font-weight: 300;
 
         @media (--desktop) {
+            font-size: 20px;
+            line-height: 28px;
             max-width: 430px;
         }
     }
@@ -151,7 +164,7 @@
         width: 100%;
 
         @media (--desktop) {
-            margin-top: 30px;
+            margin-top: 23px;
             max-width: 430px;
         }
     }
