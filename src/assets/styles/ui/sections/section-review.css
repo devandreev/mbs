@@ -1,8 +1,8 @@
 .section-review {
 
     &__wrapper {
+
         aspect-ratio: 390/210;
-        
         display: flex;
         flex-direction: column;
         align-items: center;
