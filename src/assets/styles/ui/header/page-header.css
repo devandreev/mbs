@@ -17,32 +17,6 @@
         padding-top: 40px;
     }
 
-    &:after {
-
-        @media (--tablet) {
-            content: '';
-            display: block;
-            background-color: var(--color-gray-3);
-
-            height: 1px;
-            max-width: calc(var(--wrapper-max-width) - var(--side-padding) * 2);
-            width: 100%;
-
-            position: absolute;
-            bottom: 11px;
-            left: 50%;
-
-            transform: translateX(-50%);
-
-            transition: opacity .4s ease;
-        }
-
-        @media (--desktop) {
-            background-color: var(--color-gray-light);
-            max-width: 1500px;
-        }
-    }
-
     &.headroom {
         opacity: 1;
 
@@ -163,7 +137,7 @@
 
         display: none;
 
-        @media (--tablet) {
+        @media (--desktop) {
             display: block;
 
             /*padding-top: 12px;*/

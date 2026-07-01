@@ -12,10 +12,16 @@
 
         <div class="section-quality__grid">
             <div class="section-quality__left">
-                <picture class="section-quality__video">
-                    <source media="(max-width: 767px)" srcset="/images/quality/preview.png">
-                    <img src="/images/quality/preview.png" alt="">
-                </picture>
+                <div class="section-quality__video js-promo-video">
+                    <picture class="section-quality__preview">
+                        <source media="(max-width: 767px)" srcset="/images/quality/preview.png">
+                        <img src="/images/quality/preview.png" alt="">
+                    </picture>
+
+                    <button class="section-quality__play js-promo-video__play" type="button" aria-label="Воспроизвести видео"></button>
+
+                    <video class="section-quality__video-element" src="/images/example.mp4" poster="/images/quality/preview.png" playsinline preload="metadata" controls></video>
+                </div>
 
                 <p class="section-quality__left-text">
                     Мы&nbsp;знаем, что часто для Вас ожидание равно промедлению, поэтому у&nbsp;нас всегда есть готовые автомобили под ваши задачи в&nbsp;оригинальной отделке Mercedes.

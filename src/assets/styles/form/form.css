@@ -22,6 +22,12 @@
     transition: box-shadow .2s ease;
 
     @media (--tablet) {
+      font-size: 14px;
+
+      padding: 5px 28px 5px 15px;
+    }
+
+    @media (--desktop) {
       font-size: 16px;
 
       padding: 12px 28px 14px 15px;
@@ -54,6 +60,10 @@
     padding-top: 5px;
 
     @media (--tablet) {
+      height: 64px;
+    }
+
+    @media (--desktop) {
       height: 78px;
     }
   }

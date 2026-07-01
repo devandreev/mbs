@@ -1,14 +1,16 @@
-<section class="section-review">
+<section class="section-review js-promo-video">
    <div class="section-review__wrapper wrapper">
-       <h2 class="section-review__title headline headline--h2">
-           Подробный обзор VIP-офиса от MBS
-       </h2>
+        <h2 class="section-review__title headline headline--h2">
+            Подробный обзор VIP-офиса от MBS
+        </h2>
 
-       <picture class="section-review__preview">
-           <source media="(max-width: 767px)" srcset="/images/video/preview-desc.png">
-           <img src="/images/video/preview-desc.png" alt="">
-       </picture>
+        <picture class="section-review__preview">
+            <source media="(max-width: 767px)" srcset="/images/video/preview-desc.png">
+            <img src="/images/video/preview-desc.png" alt="">
+        </picture>
 
-       <button class="section-review__button" type="button"></button>
+        <button class="section-review__button js-promo-video__play" type="button" aria-label="Воспроизвести видео"></button>
+
+        <video class="section-review__video" src="/images/example.mp4" poster="/images/video/preview-desc.png" playsinline preload="metadata" controls></video>
    </div>
 </section>

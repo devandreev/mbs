@@ -19,7 +19,8 @@
         margin-bottom: 14px;
 
         @media (--desktop) {
-            margin-bottom: 80px;
+            margin-top: -90px;
+            margin-bottom: 55px;
         }
     }
 
@@ -58,4 +59,27 @@
             width: 80px;
         }
     }
+
+    &__video {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        display: none;
+    }
 }
+
+.section-review.js-promo-video.is-playing .section-review__preview,
+.section-review.js-promo-video.is-playing .section-review__button,
+.section-review.js-promo-video.is-playing .section-review__title {
+    display: none;
+}
+
+.section-review.js-promo-video.is-playing .section-review__video {
+    display: block;
+}
+
