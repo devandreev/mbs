@@ -198,6 +198,13 @@ module.exports = (env, options) => {
           test: /\.svg/,
           exclude: /(fonts)/,
           type: 'asset/inline',
+        },
+        {
+          test: /\.(png|jpe?g|gif|webp)$/i,
+          type: 'asset/resource',
+          generator: {
+            filename: 'images/[name][ext]'
+          }
         }
       ]
     },
