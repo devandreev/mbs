@@ -1,0 +1,23 @@
+.button-icon {
+  appearance: none;
+  border: 1px solid currentColor;
+  color: black;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  font-size: 32px;
+  text-indent: -200vw;
+
+  height: 1em;
+  width: 1em;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: color .2s ease;
+
+  &--phone {
+    @mixin icon-image phone, 20px;
+  }
+
+}

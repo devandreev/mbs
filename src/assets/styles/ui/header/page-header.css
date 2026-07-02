@@ -223,12 +223,24 @@
     &__phone {
         display: none;
 
-        @media (--desktop) {
+        @media (--tablet) {
             display: block;
             color: var(--color-dark);
+            font-size: 16px;
+            line-height: 20px;
+            text-decoration: none;
+        }
+
+        @media (--desktop) {
             font-size: 20px;
             line-height: 30px;
-            text-decoration: none;
+        }
+    }
+
+    &__phone-button {
+
+        @media (--tablet) {
+            display: none;
         }
     }
 

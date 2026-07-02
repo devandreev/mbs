@@ -6,6 +6,7 @@ import '@/assets/styles/form/components/form-checkbox.css'
 import '@/assets/styles/form/components/form-radio.css'
 
 import '@/assets/styles/ui/link-icon.css'
+import '@/assets/styles/ui/button-icon.css'
 import '@/assets/styles/ui/header/page-header.css'
 
 import '@/assets/styles/ui/pages/page-home.css'
