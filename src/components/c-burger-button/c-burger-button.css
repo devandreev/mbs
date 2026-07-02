@@ -1,0 +1,64 @@
+.c-burger-button {
+  --time: 200ms;
+
+  display: block;
+
+  appearance: none;
+  cursor: pointer;
+
+  border: 1px solid var(--button-color, var(--color-dark));
+  background: none;
+  font-size: 32px;
+  outline: none;
+
+  padding: 0;
+  margin: 0;
+
+  height: 1em;
+  width: 1em;
+
+  position: relative;
+
+  &__burger {
+    /* display: none; */
+  }
+
+  &__burger,
+  &__close {
+    height: .5em;
+    width: .5em;
+
+    position: absolute;
+    top: calc(50% - .25em);
+    left: calc(50% - .25em);
+  }
+
+  &__close {
+    transform: scale(0);
+    transition: transform var(--time) ease;
+  }
+
+  &__line {
+    fill: none;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform-origin: 50%;
+    transition: transform var(--time) ease;
+    stroke: var(--button-color, var(--color-dark));
+  }
+
+  &__close &__line {
+    stroke: var(--button-color, var(--color-dark));
+    stroke-width: 2px;
+  }
+
+  &--active &__burger &__line {
+      transform: scale(0);
+  }
+
+  &--active &__close {
+      transform: scale(1);
+  }
+}
+

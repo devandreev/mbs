@@ -1,3 +1,6 @@
+import CBurgerButton from '@/components/c-burger-button/c-burger-button.js'
+import CPopup from '@/components/c-popup/c-popup.js'
+
 import Headroom from 'headroom.js'
 import App from '@/app/App.js'
 import Swiper from 'swiper'
@@ -7,7 +10,10 @@ import 'swiper/css'
 const app = new App({
   plugins: {},
 
-  components: {},
+  components: {
+    CPopup,
+    CBurgerButton,
+  },
 
   methods: { 
     initScrollBehavior() {
@@ -50,6 +56,41 @@ const app = new App({
       })
     },
 
+    initBurgerMenu() {
+      const menu = document.querySelector('#mobile-menu'),
+          burger = document.querySelector('#burger-button'),
+          header = document.querySelector('#header'),
+          mobileRequestButton = document.querySelector('#mobile-request-button')
+      // requestButton = document.querySelector('#request-button')
+
+      burger.addEventListener('click', () => {
+        menu.toggle(burger.opened)
+
+        header.classList.toggle('page-header--fixed', burger.opened)
+      })
+
+      menu.addEventListener('hide', () => {
+        burger.toggle(false)
+
+        header.classList.toggle('page-header--fixed', false)
+      })
+
+
+      mobileRequestButton.addEventListener('click', () => {
+        burger.toggle(false)
+        menu.toggle(false)
+
+        header.classList.toggle('page-header--fixed', false)
+      })
+
+      // requestButton.addEventListener('click', () => {
+      //   burger.toggle(false)
+      //   menu.toggle(false)
+
+      //   header.classList.toggle('page-header--fixed', false)
+      // })
+    },
+
     initEquipmentSlider() {
       const el = document.querySelector('.js-equipment-swiper')
       if (!el) return
@@ -83,6 +124,8 @@ const app = new App({
   onload() {
     // Плавающая шапка
     this.initHeadroom()
+
+    this.initBurgerMenu()
 
     this.initScrollBehavior()
 
