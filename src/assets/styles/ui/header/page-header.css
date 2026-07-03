@@ -8,13 +8,13 @@
     padding-right: var(--scrollbar-gap);
 
     @media (--tablet) {
-        height: 94px;
-        padding-top: 28px;
+        height: 80px;
     }
 
     @media (--desktop) {
         height: 144px;
         padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     &.headroom {
@@ -24,8 +24,9 @@
         z-index: 100;
 
         transition:
-                background-color 200ms ease,
+                background-color 100ms ease,
                 opacity 50ms ease,
+                height 500ms ease,
                 transform var(--transform-delay) ease;
 
         will-change: transform;
@@ -50,6 +51,67 @@
         &--unpinned {
             transform: translateY(-100%);
         }
+
+        &--not-top {
+            background-color: var(--color-dark);
+            display: flex;
+            align-items: center;
+
+            height: 48px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+
+            @media (--tablet) {
+                height: 56px;
+            }
+
+            @media (--desktop) {
+                height: 80px;
+            }
+
+            .page-header__logo {
+                color: var(--color-white);
+
+                @media (--desktop) {
+                    height: 56px;
+                    width: 51px;
+                }
+            }
+
+            .page-header__link {
+                color: var(--color-white);
+            }
+
+            .page-header__phone {
+                color: var(--color-white);
+            }
+
+            .page-header__button {
+                border-color: var(--color-brown);
+                color: var(--color-brown-light);
+                padding-top: 0px;
+                padding-bottom: 0px;
+
+                @media (--desktop) {
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                }
+            }
+
+            .page-header__burger-button {
+                --button-color: var(--color-brown-light);
+            }
+
+            .page-header__phone-button {
+                color: var(--color-brown-light);
+
+                @mixin icon-image phone-brown, 20px;
+
+                @media (--tablet) {
+                    display: none;
+                }
+            }
+        }
     }
 
     &--fixed {
@@ -63,6 +125,14 @@
 
     &--fixed &__burger-button {
         --button-color: var(--color-white);
+    }
+
+    &--fixed &__phone {
+        visibility: hidden;
+    }
+
+    &--fixed &__phone-button {
+        visibility: hidden;
     }
 
     &--fixed &__button {
@@ -81,6 +151,7 @@
         display: grid;
         grid-template-areas: 'logo right';
         grid-template-columns: 1fr auto;
+        width: 100%;
 
         @media (--tablet) {
             grid-template-areas: 'logo menu right';
@@ -202,6 +273,7 @@
         grid-area: right;
 
         justify-self: flex-end;
+        align-self: center;
 
         @media (--desktop) {
             /*padding-top: 13px;*/
