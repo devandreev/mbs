@@ -60,8 +60,7 @@ const app = new App({
       const menu = document.querySelector('#mobile-menu'),
           burger = document.querySelector('#burger-button'),
           header = document.querySelector('#header'),
-          mobileRequestButton = document.querySelector('#mobile-request-button')
-      // requestButton = document.querySelector('#request-button')
+          solutionButton = document.querySelector('.js-form-solution-button')
 
       burger.addEventListener('click', () => {
         menu.toggle(burger.opened)
@@ -76,7 +75,7 @@ const app = new App({
       })
 
 
-      mobileRequestButton.addEventListener('click', () => {
+      solutionButton.addEventListener('click', () => {
         burger.toggle(false)
         menu.toggle(false)
 

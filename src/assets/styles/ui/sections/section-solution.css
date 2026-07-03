@@ -1,17 +1,24 @@
 .section-solution {
+    padding-top: 80px;
+
+    @media (--tablet) {
+        padding-top: 105px;
+    }
+
+    @media (--desktop) {
+        padding-top: 122px;
+    }
 
     &__title {
-        margin-top: 80px;
+        margin-top: 0px;
         margin-bottom: 18px;
 
         @media (--tablet) {
-            margin-top: 105px;
             font-size: 32px !important;
             margin-bottom: 0px;
         }
 
         @media (--desktop) {
-            margin-top: 122px;
             font-size: 68px !important;
             margin-bottom: 18px;
         }
