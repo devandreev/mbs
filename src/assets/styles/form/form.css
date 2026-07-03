@@ -30,15 +30,16 @@
     @media (--desktop) {
       font-size: 16px;
 
-      padding: 12px 28px 14px 15px;
+      padding: 12px 28px 12px 15px;
     }
 
     &:hover {
-      --border-color: var(--color-green-5);
+      --border-color: var(--color-brown-light);
     }
 
     &:focus {
-      --border-color: var(--color-green-2);
+      --border-color: var(--color-brown-light);
+      box-shadow: 0 0 0 1px rgba(153, 116, 81, 0.3);
     }
   }
 
@@ -46,7 +47,7 @@
 
     /* TODO: переписать правило */
     c-search:focus-within & {
-      box-shadow: 0 0 0 1px var(--color-green-2);
+      box-shadow: 0 0 0 1px var(--color-brown-light);
 
       &:not(:placeholder-shown):invalid {
         box-shadow: 0 0 0 1px var(--color-tomato);
@@ -78,7 +79,7 @@
         color: var(--color-white);
         position: absolute;
         right: 9px;
-        top: 17px;
+        top: 14px;
       }
     }
   }

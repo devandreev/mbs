@@ -31,4 +31,13 @@
             padding: 17px 24px;
         }
     }
+
+    &--big {
+
+        @media (--desktop) {
+            font-size: 20px;
+            line-height: 30px;
+            padding: 24px 24px;
+        }
+    }
 }

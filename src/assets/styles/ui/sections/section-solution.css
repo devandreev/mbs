@@ -98,7 +98,7 @@
         }
 
         @media (--desktop) {
-            margin-top: 53px;
+            margin-top: 58px;
         }
     }
 
@@ -109,7 +109,7 @@
     &__button {
 
         @media (--desktop) {
-            margin-top: 20px;
+            margin-top: 11px;
         }
     }
 
