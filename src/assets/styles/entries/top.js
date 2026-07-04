@@ -24,4 +24,4 @@ import '@/assets/styles/ui/sections/section-advatage.css'
 import '@/assets/styles/ui/sections/section-mbs.css'
 import '@/assets/styles/ui/sections/section-brands.css'
 import '@/assets/styles/ui/sections/section-solution.css'
-
+import '@/assets/styles/ui/sections/section-world.css'

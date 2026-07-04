@@ -189,4 +189,21 @@
             @mixin icon arrow-right;
         }
     }
+
+    &--hero {
+        padding-bottom: 70px;
+    }
+
+    &--hero &__title {
+        text-align: center;
+        letter-spacing: -3%;
+        line-height: 1;
+        margin-top: 34px;
+        margin-bottom: 18px;
+
+        @media (--desktop) {
+            margin-top: 28px;
+            margin-bottom: 48px;
+        }
+    }
 }
